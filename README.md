@@ -13,5 +13,5 @@
   <p>As you can see, Django has already put something here for us.</p>
   <p>The admin URL, is already here:</p>
   <img src="urladmin.png" alt="urladmin image"/>
-  <p>This line means that URL that starts with admin/, Django will find a corresponding view. </p>
+  <p>This line means that URL that starts with admin/, Django will find a corresponding view.</p>
    
