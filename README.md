@@ -5,7 +5,7 @@
     
 <img src="urlimage.png" alt="url image"/>
 
-  <p>Every page on the Internet needs its own URL. This way your application knows what it should show to a user.In Django, we use something called URLconf (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.</p>
+  <p>Every page on the Internet needs its own URL. This way your application knows what it should show to a user.In Django, we use something called URL configuration.URL configuration is a set of patterns that Django will try to match the requested URL to find the correct view.</p>
   
   - #### How do URLs work in Django?
   <p>Let's open up the yourproject/urls.py file in your code editor like SublimeTool and see what it looks like:</p>
