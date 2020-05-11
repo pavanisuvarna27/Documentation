@@ -5,4 +5,4 @@
     
 <img src="urlimage.png" alt="url image"/>
 
-### What is the use of Dynamic Url Creation in django ?
+<p>Every page on the Internet needs its own URL. This way your application knows what it should show to a user.</p> 
