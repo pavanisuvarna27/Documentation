@@ -10,9 +10,11 @@
   <p>Let's open up the yourproject/urls.py file in your code editor like SublimeTool and see what it looks like:</p>
   
   <img src="urlsconf.png" alt="urlconf image"/>
+  
   <p>As you can see, Django has already put something here for us.</p>
   <p>The admin URL, is already here:</p>
   <img src="urladmin.png" alt="urladmin image"/>
+  
   <p>This line means that URL that starts with admin/, Django will find a corresponding view.</p>
    
   <img src="urladminlogin.png" alt="urladminlogin image"/>
