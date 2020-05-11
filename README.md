@@ -15,3 +15,4 @@
   <img src="urladmin.png" alt="urladmin image"/>
   <p>This line means that URL that starts with admin/, Django will find a corresponding view.</p>
    
+  <img src="urladminlogin.png" alt="urladminlogin image"/>
