@@ -57,24 +57,24 @@ INSTALLED_APPS = [
   <p>The admin URL, is already here:</p>
   <img src="urladmin.png" alt="urladmin image"/>
   
-  * This line means that URL that starts with admin/, Django will find a corresponding view.
+  * We have only one url in myproject/urls.py that is **admin/** and that is for admin stuff.
    <img src="urladminlogin.png" alt="urladminlogin image"/>
+   
  ------------------------------------------
  ### Types of URLs?
     **we have 2 types Urls:**
              1. Static Urls 
              2. Dynamic Urls
+             
   ------------------------------------------
-  - #### Your first Django URL!
-  <p>we can add our first URL pattern:</p>
-  -<p> in urls.py for creating url we will use path function</p>
-  -<p> in urls.py ,we have to import views from yourapp for that add this line in urls.py</p>
-          - **'from appaname import views'**
-          - example: 
-                 > <p>for example my appname is **myapp** then</p>
-                    - **'from myapp import views'** 
-                    
-     - ###### Configuring the Static URL:
+  #### Your first Django URL!
+  * we can add our first URL pattern:
+  * in urls.py for creating url we will use path function
+  * in urls.py ,we have to import views from yourapp for that add this line in urls.py
+  ````   
+  'from myapp import views'
+  ````                 
+   ###### Configuring the Static URL:
   - <p> for that path we will give different values like</p>
           - **path('urlname/',views.funtionname,name='nameoftheurl'),**
           - example: 
