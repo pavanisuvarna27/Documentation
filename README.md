@@ -123,13 +123,15 @@ INSTALLED_APPS = [
 
   ### Configuring the Dynamic URL: 
   * for that path we will give different values like
-          -for string:
-          - **path('urlname/<str:name',views.funtionname,name='nameoftheurl'),**
-          -for integer:
-           - **path('urlname/<str:name',views.funtionname,name='nameoftheurl'),**
+          **for string:**
+            `path('urlname/<str:name',views.funtionname,name='nameoftheurl'),`
+          **for integer:**
+             `**path('urlname/<str:name',views.funtionname,name='nameoftheurl'),`
           - example: 
-                  - **path('hello/<str:name>',views.hello,name='hello'),**--------->string
-                  - **path('rollno/<int:id>',views.rollno,name='rollno'),**--------->integer
+                  ````
+                   path('hello/<str:name>',views.hello,name='hello'),--------->string
+                   path('rollno/<int:id>',views.rollno,name='rollno'),--------->integer
+                   ````
    -it looks like(urls.py):
    <img src="hellorollno.png" alt="hellorollno image"/>
    - in views.py, we have to import HttpResponse for that add this line in views.py
