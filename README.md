@@ -74,7 +74,9 @@ INSTALLED_APPS = [
   ```` 
   * It looks like(myproject/urls.py):
    <img src="importviews.png" alt="importviews image"/>
+   
    ------------------------------------------
+   
   ### Configuring the Static URL:
   * for that path we will give different values like:
   
