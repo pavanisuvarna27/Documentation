@@ -70,8 +70,8 @@ INSTALLED_APPS = [
   ------------------------------------------
   #### Your first Django URL!
   * we can add our first URL pattern:
-  * in urls.py for creating url we will use path function
-  * in urls.py ,we have to import views from yourapp for that add this line in urls.py
+        * in urls.py for creating url we will use path function
+        * in urls.py ,we have to import views from yourapp for that add this line in urls.py
   ````   
   'from myapp import views'
   ````                 
