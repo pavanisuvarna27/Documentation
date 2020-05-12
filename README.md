@@ -59,12 +59,12 @@ INSTALLED_APPS = [
   
   * This line means that URL that starts with admin/, Django will find a corresponding view.
    <img src="urladminlogin.png" alt="urladminlogin image"/>
- ____ 
+ ------------------------------------------
  ### Types of URLs?
     **we have 2 types Urls:**
              1. Static Urls 
              2. Dynamic Urls
-  ____
+  ------------------------------------------
   - #### Your first Django URL!
   <p>we can add our first URL pattern:</p>
   -<p> in urls.py for creating url we will use path function</p>
