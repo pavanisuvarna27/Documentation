@@ -1,5 +1,4 @@
-## Django Url Mapping and  Messages generation
-> ##  Url Mapping:
+## Django Url Mapping
 ### What is a URL?
   A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar.(Yes!     127.0.0.1:8000 is a URL! And localhost:8000 is also a URL! And https://github.com/ is also a URL! )
  <img src="url.png" alt="url image"/>
@@ -26,6 +25,7 @@ We assume you are in your project folder. In our main “myproject” folder, th
 ````
 $ python manage.py startapp myapp
 ````
+
 #### Get the Project to Know About Your Application
 At this stage we have our "myapp" application, now we need to register it with our Django project "myproject". To do so, update INSTALLED_APPS tuple in the settings.py file of your project (add your app name) −
 
