@@ -65,7 +65,7 @@ INSTALLED_APPS = [
     2. Dynamic Urls
              
   ------------------------------------------
- #### Your first Django URL!
+ ### Your first Django URL!
  * We can add our first URL pattern:
      * In myproject/urls.py for creating url we will use path function
      * In myproject/urls.py ,we have to import views from myapp, for that add this line in urls.py
@@ -74,8 +74,8 @@ INSTALLED_APPS = [
   ```` 
   * It looks like(myproject/urls.py):
    <img src="importviews.png" alt="importviews image"/>
-   
-  **Configuring the Static URL:**
+   ------------------------------------------
+  ### Configuring the Static URL:
   * for that path we will give different values like:
   
          path('urlname/',views.funtionname,name='nameoftheurl'),
@@ -99,30 +99,30 @@ INSTALLED_APPS = [
                    return HttpResponse('Welcome to all <br> This is ur Static Url')
    ```
    
-   > in this function, request is a default parameter,we can't change that.
+   > In this function, request is a default parameter,we can't change that.
    
    * It looks like(myproject/views.py):
    <img src="defmsg.png" alt="defmsg image"/>
    
-   ##### Run Project:
+   **Run Project:**
    
    * save the changes  and start server using **python manage.py runserver**
-   * then open chrome:
+   *  Then open chrome:
    
-    `localhost:8000/url`
+    localhost:8000/url
    * example:
    
-            ````
+            
              localhost:8000/msg
-             ````
-   ###### OutPut (Static Url):
-   * then we get OUTPUT it looks like:
+             
+   **OutPut for Static Url:**
+   * Then we get OUTPUT it looks like:
    <img src="msgop.png" alt="msgop image"/>
 
  ------------------------------------------
 
-  - ###### Configuring the Dynamic URL: 
-  - <p> for that path we will give different values like</p>
+  ### Configuring the Dynamic URL: 
+  * for that path we will give different values like
           -for string:
           - **path('urlname/<str:name',views.funtionname,name='nameoftheurl'),**
           -for integer:
