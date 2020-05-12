@@ -63,9 +63,9 @@ INSTALLED_APPS = [
    
  ------------------------------------------
  ### Types of URLs?
- * we have 2 types Urls:
-      * Static Urls 
-      * Dynamic Urls
+ #### we have 2 types Urls:
+   * 1.Static Urls 
+   * 2.Dynamic Urls
              
   ------------------------------------------
   #### Your first Django URL!
