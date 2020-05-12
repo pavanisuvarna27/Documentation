@@ -5,8 +5,7 @@
     
 <img src="url.png" alt="url image"/>
  <p>Every page on the Internet needs its own URL. This way your application knows what it should show to a user.In Django, we use something called URL configuration.URL configuration is a set of patterns that Django will try to match the requested URL to find the correct view.</p>
- ____ 
- 
+ ____
   - ### How do URLs work in Django?
   <p>Let's open up the yourproject/urls.py file in your code editor like SublimeTool and see what it looks like:</p>
   
@@ -19,9 +18,12 @@
   <p>This line means that URL that starts with admin/, Django will find a corresponding view.</p>
    
   <img src="urladminlogin.png" alt="urladminlogin image"/>
-  
-  -#### **we have 2 types Urls,Static Urls and Dynamic Urls
-  
+ ____ 
+  - ### Types of URLs?
+   - **we have 2 types Urls:**
+             1. Static Urls 
+             2. Dynamic Urls
+  ____
   - #### Your first Django URL!
   <p>we can add our first URL pattern:</p>
   -<p> in urls.py for creating url we will use path function</p>
