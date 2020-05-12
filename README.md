@@ -68,7 +68,7 @@ INSTALLED_APPS = [
     2. Dynamic Urls
              
   ------------------------------------------
-  #### Your first Django URL!
+ #### Your first Django URL!
  * We can add our first URL pattern:
      * In myproject/urls.py for creating url we will use path function
      * In myproject/urls.py ,we have to import views from myapp, for that add this line in urls.py
@@ -78,35 +78,44 @@ INSTALLED_APPS = [
   * It looks like(myproject/urls.py):
    <img src="importviews.png" alt="importviews image"/>
    
-   ###### Configuring the Static URL:
-  * for that path we will give different values like</p>
-         **path('urlname/',views.funtionname,name='nameoftheurl'),**
+  **Configuring the Static URL:**`
+  * for that path we will give different values like:</p>
+         `path('urlname/',views.funtionname,name='nameoftheurl'),`
   * example:
   ````
             path('msg/',views.msg,name='msg'),
    ````
-  * it looks like(myproject/urls.py):
+  * It looks like(myproject/urls.py):
 
    <img src="msg.png" alt="msg image"/>
-   - in views.py, we have to import HttpResponse for that add this line in views.py
-            **from django.http import HttpResponse**
-   -<p> in views.py we have add a function with name msg</p>
+   
+   * In views.py, we have to import HttpResponse for that add this line in views.py
+            ````
+            from django.http import HttpResponse
+            ````
+   * In views.py, we have add a function with name msg
    ```
    def msg(request):
     return HttpResponse('Welcome to all <br> This is ur Static Url')
    ```
-   ~~~~~~~~
-   > in this function, request is a default parameter,we can't change that.
-   - it looks like:
-   <img src="defmsg.png" alt="defmsg image"/>
    
-   - save the changes  and start server using **python manage.py runserver**
-   - then open chrome **localhost:8000/url**
-   - example:
-            - **localhost:8000/msg**
-   - then we get OUTPUT it looks like:
+   > in this function, request is a default parameter,we can't change that.
+   * It looks like(myproject/views.py):
+   <img src="defmsg.png" alt="defmsg image"/>
+   ##### Run Project:
+   * save the changes  and start server using **python manage.py runserver**
+   * then open chrome:
+    `localhost:8000/url`
+   * example:
+            ````
+             localhost:8000/msg
+             ````
+   ###### OutPut (Static Url):
+    * then we get OUTPUT it looks like:
    <img src="msgop.png" alt="msgop image"/>
-  
+
+ ------------------------------------------
+
   - ###### Configuring the Dynamic URL: 
   - <p> for that path we will give different values like</p>
           -for string:
