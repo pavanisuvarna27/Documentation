@@ -45,7 +45,7 @@
     [
     path('admin/', admin.site.urls),
     ]
-  ```
+  ``` 
    <img src="msg.png" alt="msg image"/>
    - in views.py, we have to import HttpResponse for that add this line in views.py
             **from django.http import HttpResponse**
