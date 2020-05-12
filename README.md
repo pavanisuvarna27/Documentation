@@ -36,6 +36,16 @@
           - example: 
                   - **path('msg/',views.msg,name='msg'),**
    -it looks like(urls.py):
+   ```
+   from django.contrib import admin
+   from django.urls import path
+   from myapp import views
+
+   urlpatterns =
+    [
+    path('admin/', admin.site.urls),
+    ]
+  ```
    <img src="msg.png" alt="msg image"/>
    - in views.py, we have to import HttpResponse for that add this line in views.py
             **from django.http import HttpResponse**
