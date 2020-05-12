@@ -113,8 +113,7 @@ INSTALLED_APPS = [
    
     localhost:8000/url
    * example:
-   
-            
+      
              localhost:8000/msg
              
    **OutPut for Static Url:**
@@ -124,39 +123,55 @@ INSTALLED_APPS = [
  ------------------------------------------
 
   ### Configuring the Dynamic URL: 
-  * for that path we will give different values like
+  * for that path we will give different values like:
+  
           **for string:**
+  
             `path('urlname/<str:name',views.funtionname,name='nameoftheurl'),`
+            
           **for integer:**
+          
              `**path('urlname/<str:name',views.funtionname,name='nameoftheurl'),`
+             
           - example: 
+          
                   ````
                    path('hello/<str:name>',views.hello,name='hello'),--------->string
                    path('rollno/<int:id>',views.rollno,name='rollno'),--------->integer
                    ````
-   -it looks like(urls.py):
+  * It looks like(myproject/urls.py):
    <img src="hellorollno.png" alt="hellorollno image"/>
-   - in views.py, we have to import HttpResponse for that add this line in views.py
-            **from django.http import HttpResponse**
-   -<p> in views.py we have add a function with name msg</p>
-   - for string:
-   def hello(request,name):
-    return HttpResponse(<center><h2>Hi '+name+'<br>Welcome to Dynamic String Url</h2></center>)
-    > remember that in url what u taken as string name that only passed in this function as a second parameter,it's better to maintain samename in urls and views(inside function) also. 
+  * In views.py, we have to import HttpResponse for that add this line in views.py
+  
+            from django.http import HttpResponse
+  * In views.py we have add a function, with name we used in urls.py that is **hello** 
+  
+  #### for string:
+
+             def hello(request,name):
+                 return HttpResponse(<center><h2>Hi '+name+'<br>Welcome to Dynamic String Url</h2></center>)
+                 
+ > Remember that in url what u taken as string name, that only passed in this function as a second parameter,it's better to maintain samename in urls and views(inside function) also. 
     
-   > in this function, request is a default parameter,we can't change that.
-   - it looks like:
+ > In this function, request is a default parameter,we can't change that.
+   
+ * It looks like(myapp/views.py):
    <img src="defstrhello.png" alt="defstrhello image"/>
    
-   - save the changes  and start server using **python manage.py runserver**
-   - then open chrome **localhost:8000/url/name**
-   - example:
-            - **localhost:8000/hello/Apssdc**
-   - then we get OUTPUT it looks like:
+   **Run Project:**
+   
+   * Save the changes  and start server using **python manage.py runserver**
+   * Then open chrome **localhost:8000/url/name**
+   * example:
+   
+            localhost:8000/hello/Apssdc
+   **OutPut for Static Url:**         
+   * Then we get OUTPUT it looks like:
    <img src="helloop.png" alt="helloop image"/>
     
+ ____
  
-- for integer:
+#### for integer:
    def hello(request,id):
     return HttpResponse('<center><h2>Hello {} <br>Welcome to Dynamic Integer Url</h2></center>'.format(id))
     > remember that in url what u taken as string name that only passed in this function as a second parameter,it's better to maintain samename in urls and views(inside function) also. 
@@ -166,9 +181,13 @@ INSTALLED_APPS = [
    <img src="defintrollno.png" alt="defintrollno image"/>
    
    - save the changes  and start server using **python manage.py runserver**
-   - then open chrome **localhost:8000/url/name**
+   - then open chrome:
+   
+              localhost:8000/url/name
    - example:
-            - **localhost:8000/hello/Apssdc**
+   
+              localhost:8000/hello/Apssdc
+   
    - then we get OUTPUT it looks like:
    <img src="rollnoop.png" alt="rollnoop image"/>
    
