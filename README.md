@@ -1,9 +1,9 @@
 ## Django Url Mapping
 ### What is a URL?
 
-   A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar.(Yes!     127.0.0.1:8000 is a URL! And localhost:8000 is also a URL! And https://github.com/ is also a URL! )
+ * A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar.(Yes!     127.0.0.1:8000 is a URL! And localhost:8000 is also a URL! And https://github.com/ is also a URL! )
  <img src="url.png" alt="url image"/>
-  Every page on the Internet needs its own URL. This way your application knows what it should show to a user.In Django, we use something called URL configuration.URL configuration is a set of patterns that Django will try to match the requested URL to find the correct view.
+ * Every page on the Internet needs its own URL. This way your application knows what it should show to a user.In Django, we use something called URL configuration.URL configuration is a set of patterns that Django will try to match the requested URL to find the correct view.
 _____
 ### Creating a Django Project & Application!
 
@@ -11,7 +11,7 @@ _____
 
 
 #### Create a Project
-Whether you are on Windows or Linux, just get a terminal or a cmd prompt and navigate to the place you want your project to be created, then use this code −
+* Whether you are on Windows or Linux, just get a terminal or a cmd prompt and navigate to the place you want your project to be created, then use this code −
 
 ````
 $ django-admin startproject myproject
@@ -21,14 +21,14 @@ $ django-admin startproject myproject
 * Next, create an application using manage.py
 
 #### Create an Application
-We assume you are in your project folder. In our main “myproject” folder, the same folder then manage.py −
+* We assume you are in your project folder. In our main “myproject” folder, the same folder then manage.py −
 
 ````
 $ python manage.py startapp myapp
 ````
 
 #### Get the Project to Know About Your Application
-At this stage we have our "myapp" application, now we need to register it with our Django project "myproject". To do so, update INSTALLED_APPS tuple in the settings.py file of your project (add your app name) −
+* At this stage we have our "myapp" application, now we need to register it with our Django project "myproject". To do so, update INSTALLED_APPS tuple in the settings.py file of your project (add your app name) −
 
 ````
 # Application definition
@@ -48,20 +48,18 @@ INSTALLED_APPS = [
 ------------------------------------------
 
  ### How do URLs work in Django?
-  <p>Let's open up the yourproject/urls.py file in your code editor like SublimeTool and see what it looks like:</p>
-  
+  * Let's open up the myproject/urls.py file in your code editor like SublimeTool and see what it looks like:
   <img src="urlsconf.png" alt="urlconf image"/>
   
-  <p>As you can see, Django has already put something here for us.</p>
+  * As you can see, Django has already put something here for us.
   <p>The admin URL, is already here:</p>
   <img src="urladmin.png" alt="urladmin image"/>
   
-  <p>This line means that URL that starts with admin/, Django will find a corresponding view.</p>
-   
-  <img src="urladminlogin.png" alt="urladminlogin image"/>
+  * This line means that URL that starts with admin/, Django will find a corresponding view.
+   <img src="urladminlogin.png" alt="urladminlogin image"/>
  ____ 
-  - ### Types of URLs?
-   - **we have 2 types Urls:**
+ ### Types of URLs?
+    **we have 2 types Urls:**
              1. Static Urls 
              2. Dynamic Urls
   ____
