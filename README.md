@@ -77,6 +77,7 @@ INSTALLED_APPS = [
    
   **Configuring the Static URL:**
   * for that path we will give different values like:
+  
          `path('urlname/',views.funtionname,name='nameoftheurl'),`
   * example:
   ````
