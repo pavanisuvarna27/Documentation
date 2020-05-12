@@ -78,7 +78,7 @@ INSTALLED_APPS = [
   **Configuring the Static URL:**
   * for that path we will give different values like:
   
-         `path('urlname/',views.funtionname,name='nameoftheurl'),`
+         `path('urlname/',views.funtionname,name='nameoftheurl'),
   * example:
   ````
             path('msg/',views.msg,name='msg'),
@@ -87,17 +87,20 @@ INSTALLED_APPS = [
 
    <img src="msg.png" alt="msg image"/>
    
-   * In views.py, we have to import HttpResponse for that add this line in views.py
+   * In views.py, we have to import HttpResponse, for that add this line in views.py
+   
             ````
             from django.http import HttpResponse
             ````
-   * In views.py, we have add a function with name msg
+   * In views.py we have add a function, with name we used in urls.py that is **msg**
+   
    ```
    def msg(request):
     return HttpResponse('Welcome to all <br> This is ur Static Url')
    ```
    
    > in this function, request is a default parameter,we can't change that.
+   
    * It looks like(myproject/views.py):
    <img src="defmsg.png" alt="defmsg image"/>
    ##### Run Project:
