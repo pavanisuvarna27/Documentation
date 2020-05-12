@@ -55,7 +55,7 @@ INSTALLED_APPS = [
   <img src="urlsconf.png" alt="urlconf image"/>
   
   * As you can see, Django has already put something here for us.
-  <p>We have only one url in myproject/urls.py that is **The admin URL** and that is for admin stuff.</p>
+  * We have only one url in myproject/urls.py that is **The admin URL** and that is for admin stuff.
   
    
  ------------------------------------------
