@@ -75,15 +75,17 @@ INSTALLED_APPS = [
   ````   
   from myapp import views
   ```` 
-  * it looks like(myproject/urls.py):
+  * It looks like(myproject/urls.py):
    <img src="importviews.png" alt="importviews image"/>
    
-   ##### Configuring the Static URL:
-  - <p> for that path we will give different values like</p>
-          - **path('urlname/',views.funtionname,name='nameoftheurl'),**
-          - example: 
-                  - **path('msg/',views.msg,name='msg'),**
-   -it looks like(urls.py):
+   ###### Configuring the Static URL:
+  * for that path we will give different values like</p>
+         **path('urlname/',views.funtionname,name='nameoftheurl'),**
+  * example:
+  ````
+            path('msg/',views.msg,name='msg'),
+   ````
+  * it looks like(myproject/urls.py):
 
    <img src="msg.png" alt="msg image"/>
    - in views.py, we have to import HttpResponse for that add this line in views.py
