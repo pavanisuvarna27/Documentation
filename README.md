@@ -63,7 +63,7 @@ INSTALLED_APPS = [
    
  ------------------------------------------
  ### Types of URLs?
- #### * We have 2 types Urls:
+ #### We have 2 types Urls:
     1. Static Urls 
     2. Dynamic Urls
              
