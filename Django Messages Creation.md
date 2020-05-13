@@ -104,17 +104,18 @@ ERROR |	An action was not successful or some other failure occurred
    * save the changes  and start server using **python manage.py runserver**
    *  Then open chrome:
    
-    			localhost:8000/url
-   * example:
-      
-             		localhost:8000/register
-             
-   **OutPut (Before Registration):**
-   * Then we get OUTPUT it looks like:
-   <img src="registerop.png" alt="registerop image"/>
+    		localhost:8000/url
+   *  Then open chrome:
    
-   **Output (After Registration):**
-   <img src="afterregisterop.png" alt="afterregisterop image"/>
+    		localhost:8000/register
+		
+ **OutPut (Before Registration):**
+ * Then we get OUTPUT(Before Registration) it looks like:
+ <img src="registerop.png" alt="registerop image"/>
+   
+ **Output (After Registration):**
+ * Then we get OUTPUT(After Registration) it looks like:
+ <img src="afterregisterop.png" alt="afterregisterop image"/>
    
   ---------------------------------
    
