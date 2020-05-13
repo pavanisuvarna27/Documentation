@@ -32,23 +32,23 @@ ERROR |	An action was not successful or some other failure occurred
 
 ----------------------------------
 ### How to create messages:
-   1. messages.success:
+   * 1. messages.success:
         * example:
         
                  messages.success(request,'ur record added successfully')
-   2. messages.info:
+   * 2. messages.info:
         * example:
         
                  messages.success(request,'you can add one more record now')
-   3. messages.warning:
+   * 3. messages.warning:
         * example:
         
                  messages.success(request,'Your account expires in three days.')
-   4. messages.error:
+   * 4. messages.error:
         * example:
         
                  messages.success(request,'Document Deleted')
-   5. messages.debug:
+   * 5. messages.debug:
         * example:
         
                  messages.success(request, '%s SQL statements were executed.' % count)
@@ -74,6 +74,7 @@ ERROR |	An action was not successful or some other failure occurred
  
 		                         messages.info(request,'Now you can add another record')
 > Dont try to prepare message before form_validition **(if form.is_valid():)**.
+
 > after saving the record only **(form.save())**,then only prepare these messages.
 
 * It looks like(myproject/views.py):
