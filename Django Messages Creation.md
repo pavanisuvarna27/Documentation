@@ -134,7 +134,7 @@ INSTALLED_APPS = [
 		return render(request,'myapp/register.html')
 ````
 
-* It looks like(myproject/views.py):
+* It looks like(myapp/views.py):
    <img src="registerfun.png" alt="registerfun image"/>
    
 ----------------------------
@@ -177,7 +177,7 @@ INSTALLED_APPS = [
 </html>
 ````
 
-* It looks like(myproject/urls.py):
+* It looks like(templates/myapp/register.html):
    <img src="register123.png" alt="register123 image"/>
 
 ---------------------------------------
@@ -203,7 +203,7 @@ INSTALLED_APPS = [
 
       from django.contrib import messages
 * Based on Message, You have to choose which message type you have to use.
-* It looks like(myproject/views.py):
+* It looks like(myapp/views.py):
 <img src="msgcontrib.png" alt="msgcontrib image"/>
 
 ----------------
@@ -220,7 +220,7 @@ INSTALLED_APPS = [
 
 > NOTE:  After saving the record only **(form.save())**,then only prepare these messages.
 
-* It looks like(myproject/views.py):
+* It looks like(myapp/views.py):
 <img src="viewsmass1.png" alt="viewsmass1 image"/>
 
 -----------------------------
