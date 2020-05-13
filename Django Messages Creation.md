@@ -62,6 +62,8 @@ ERROR |	An action was not successful or some other failure occurred
 * Based on Message, You have to choose which message type you have to use.
 * It looks like(myproject/views.py):
 <img src="msgcontrib.png" alt="msgcontrib image"/>
+
+-----------------------------
 ### Procedure for to show message in Html file:
 ````
 {% if messages %}
@@ -70,6 +72,7 @@ ERROR |	An action was not successful or some other failure occurred
      {% endfor %}
 {% endif %}
 ````
+
 > Using **{% if messages %}** , it checks there is any messages are not
 
 > Using **{% for msg in messages %}** ,If there is morethan one message then show all messages,otherwise there is a single message show that one.
