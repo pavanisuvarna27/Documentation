@@ -149,3 +149,39 @@ ERROR |	An action was not successful or some other failure occurred
  * Then we get OUTPUT it looks like:
  <img src="afterother.png" alt="afterother image"/>
  
+> NOTE: Debug messages ignored by default.
+
+----------------------------------------
+### Issue With Error message tag:
+
+* The issue is that Django's default message tags do not match perfectly with Bootstrap's contextual classes.
+* Bootstrap uses the contextual class danger for the color red. 
+* You can add the MESSAGE_TAGS setting to your settings.py to apply the danger tag to messages with the level messages.ERROR.
+
+**For that in myproject/settings.py:**
+* In settings.py add this line-
+
+
+		from django.contrib.messages import constants as messages
+		MESSAGE_TAGS = {
+    			messages.ERROR: 'danger',
+	       		       }
+* It looks like(myproject/settings.py):
+<img src="seterror.png" alt="seterror image"/>
+
+------------------------------
+**Run Project:**
+   
+   * save the changes  and start server using **python manage.py runserver**
+   *  Then open chrome:
+   
+    		localhost:8000/url
+   *  Then open chrome:
+   
+    		localhost:8000/register
+		
+ **OutPut :**
+ * Then we get OUTPUT it looks like:
+ <img src="errorop.png" alt="errorop image"/>
+ 
+> NOTE: Debug messages ignored by default.
