@@ -220,7 +220,7 @@ INSTALLED_APPS = [
 > after saving the record only **(form.save())**,then only prepare these messages.
 
 * It looks like(myproject/views.py):
-<img src="viewsmass.png" alt="viewsmass image"/>
+<img src="viewsmass1.png" alt="viewsmass1 image"/>
 
 -----------------------------
 ### Procedure for to show message in Html file:
