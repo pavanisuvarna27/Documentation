@@ -196,6 +196,7 @@ INSTALLED_APPS = [
  <img src="registerop1.png" alt="registerop1 image"/>
  
  ---------------------------------------
+ **After Creating Employee Registration Form ,For this RegistrationForm I want apply message alerts Using Message Tags**
 ### Configuration (or) Accessing Messages:
 * By default, a brand new Django project already comes with the messages framework installed.
 * So we just import that messages,for that add this line in **myapp/views.py**
