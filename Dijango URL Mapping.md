@@ -85,7 +85,7 @@ INSTALLED_APPS = [
    ------------------------------------------
    
   ### Configuring the Static URL:
-  **In Urls.py:**
+  **`In Urls.py:`adding Static msg url path**
   * for that path we will give different values like:
   
          path('urlname/',views.funtionname,name='nameoftheurl'),
@@ -97,7 +97,7 @@ INSTALLED_APPS = [
 
    <img src="msg.png" alt="msg image"/>
    
-   **In views.py:**
+   **`In views.py: importing HttpResponse and adding msg function`**
    * In views.py, we have to import HttpResponse, for that add this line in views.py
    
            
@@ -110,9 +110,9 @@ INSTALLED_APPS = [
                    return HttpResponse('Welcome to all <br> This is ur Static Url')
    ```
    
-   > In this function, request is a default parameter,we can't change that.
+   > NOTE: In this function, request is a default parameter,we can't change that.
    
-   * It looks like(myproject/views.py):
+   * It looks like(myapp/views.py):
    <img src="defmsg.png" alt="defmsg image"/>
    
    **Run Project:**
@@ -132,14 +132,14 @@ INSTALLED_APPS = [
  ------------------------------------------
 
   ### Configuring the Dynamic URL: 
-  **In Urls.py:**
+  **`In Urls.py: adding string dynamic hello url path and integer dynamic rollno url path`**
   * for that path we will give different values like:
   
-      **for string:**
+      **`for string:`**
   
             path('urlname/<str:name',views.funtionname,name='nameoftheurl'),
             
-      **for integer:**
+      **`for integer:`**
           
              **path('urlname/<str:name',views.funtionname,name='nameoftheurl'),
              
@@ -151,20 +151,20 @@ INSTALLED_APPS = [
   * It looks like(myproject/urls.py):
    <img src="hellorollno.png" alt="hellorollno image"/>
    
-  **In Views.py:**
+  **`In Views.py:importing HttpResponse and add hello function for string and rollno function for integer `**
   * In views.py, we have to import HttpResponse for that add this line in views.py
   
             from django.http import HttpResponse
   * In views.py we have add a function, with name we used in urls.py that is **hello** 
   
-      **for string:**
+      **`for string:`**
 
              def hello(request,name):
                  return HttpResponse(<center><h2>Hi '+name+'<br>Welcome to Dynamic String Url</h2></center>)
                  
- > Remember that in url what u taken as string name, that only passed in this function as a second parameter,it's better to maintain samename in urls and views(inside function) also. 
+ >  NOTE: Remember that in url what u taken as string name, that only passed in this function as a second parameter,it's better to maintain samename in urls and views(inside function) also. 
     
- > In this function, request is a default parameter,we can't change that.
+ > NOTE: In this function, request is a default parameter,we can't change that.
    
  * It looks like(myapp/views.py):
    <img src="defstrhello.png" alt="defstrhello image"/>
@@ -182,14 +182,14 @@ INSTALLED_APPS = [
     
  ____
  
- **for Integer:**
+ **`for Integer:`**
 
              def rollno(request,id):
                  return HttpResponse(<center><h2>Hello {} <br>Welcome to Dynamic Integer Url</h2></center>'.format(id))
                  
- > Remember that in url what u taken as string name, that only passed in this function as a second parameter,it's better to maintain samename in urls and views(inside function) also. 
+ > NOTE:  Remember that in url what u taken as string name, that only passed in this function as a second parameter,it's better to maintain samename in urls and views(inside function) also. 
     
- > In this function, request is a default parameter,we can't change that.
+ > NOTE: In this function, request is a default parameter,we can't change that.
    
  * It looks like(myapp/views.py):
    <img src="defintrollno.png" alt="defintrollno image"/>
