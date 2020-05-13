@@ -137,11 +137,11 @@ INSTALLED_APPS = [
   
       **`for string:`**
   
-            path('urlname/<str:name',views.funtionname,name='nameoftheurl'),
+            path('urlname/<str:name>',views.funtionname,name='nameoftheurl'),
             
       **`for integer:`**
           
-             **path('urlname/<str:name',views.funtionname,name='nameoftheurl'),
+             path('urlname/<int:id>',views.funtionname,name='nameoftheurl'),
              
   * example: 
                            
