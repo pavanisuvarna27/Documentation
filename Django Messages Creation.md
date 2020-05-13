@@ -181,7 +181,21 @@ INSTALLED_APPS = [
    <img src="register123.png" alt="register123 image"/>
 
 ---------------------------------------
-
+**Run Project:**
+   
+   * save the changes  and start server using **python manage.py runserver**
+   *  Then open chrome:
+   
+    		localhost:8000/url
+   *  Then open chrome:
+   
+    		localhost:8000/register
+		
+ **OutPut :**
+ * Then we get OUTPUT it looks like:
+ <img src="registerop1.png" alt="registerop1 image"/>
+ 
+ ---------------------------------------
 ### Configuration (or) Accessing Messages:
 * By default, a brand new Django project already comes with the messages framework installed.
 * So we just import that messages,for that add this line in **myapp/views.py**
