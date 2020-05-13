@@ -216,9 +216,9 @@ INSTALLED_APPS = [
  * info message:
  
 		              messages.info(request,'Info!,Now you can add another record')
-> Dont try to prepare message before form_validition **(if form.is_valid():)**.
+> NOTE:  Dont try to prepare message before form_validition **(if form.is_valid():)**.
 
-> after saving the record only **(form.save())**,then only prepare these messages.
+> NOTE:  After saving the record only **(form.save())**,then only prepare these messages.
 
 * It looks like(myproject/views.py):
 <img src="viewsmass1.png" alt="viewsmass1 image"/>
@@ -233,9 +233,9 @@ INSTALLED_APPS = [
 {% endif %}
 ````
 
-> Using **{% if messages %}** , it checks there is any messages are not
+> NOTE:  Using **{% if messages %}** , it checks there is any messages are not
 
-> Using **{% for msg in messages %}** ,If there is morethan one message then show all messages,otherwise there is a single message show that one.
+> NOTE:  Using **{% for msg in messages %}** ,If there is morethan one message then show all messages,otherwise there is a single message show that one.
 
 * It looks like(templates/myapp/register.html):
 <img src="regmass.png" alt="regmass image"/>
