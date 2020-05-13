@@ -9,7 +9,14 @@
 ------------------------------------------
 
 ### Creating a Django Project & Application!
+#### django installation
+* Whether you are on Windows or Linux, just get a terminal or a cmd prompt,then use this code −
 
+```
+    pip install django
+           (or)
+    pip install django == 2.2.7
+ ```
 * After installing Django, you need to create a project  using django
 
 
