@@ -1,4 +1,5 @@
 ## Django Messages Creation:
+### What is Django Messages:
 * In Django Messages is a module for generating alerts.
 * The Django web frameworks comes with a messaging system that allows us to store messages that we can check for on each page load. If there are some messages, we can display them to the user. 
 * In any web application, we need to display notification messages to the end user after processing a form or some other types of his requests.
