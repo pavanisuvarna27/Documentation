@@ -77,7 +77,8 @@ ERROR |	An action was not successful or some other failure occurred
 > after saving the record only **(form.save())**,then only prepare these messages.
 
 * It looks like(myproject/views.py):
-<img src="viewmass.png" alt="viewmass image"/>
+<img src="viewsmass.png" alt="viewsmass image"/>
+
 -----------------------------
 ### Procedure for to show message in Html file:
 ````
