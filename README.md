@@ -150,7 +150,7 @@ INSTALLED_APPS = [
             from django.http import HttpResponse
   * In views.py we have add a function, with name we used in urls.py that is **hello** 
   
-   **for string:**
+      **for string:**
 
              def hello(request,name):
                  return HttpResponse(<center><h2>Hi '+name+'<br>Welcome to Dynamic String Url</h2></center>)
