@@ -56,13 +56,28 @@ ERROR |	An action was not successful or some other failure occurred
  ---------------------------                
 ### Configuration (or) Accessing Messages:
 * By default, a brand new Django project already comes with the messages framework installed.
-* So we just import that messages,for that add this line in **myproject/views.py**
+* So we just import that messages,for that add this line in **myapp/views.py**
 
       from django.contrib import messages
 * Based on Message, You have to choose which message type you have to use.
 * It looks like(myproject/views.py):
 <img src="msgcontrib.png" alt="msgcontrib image"/>
 
+----------------
+### Preparing Message (myapp/views.py):
+ * After registration,then we want show a success message that is **employeename recorded stored succesfully**
+ * and also show info message like **Now you can add another record**
+ * Success message:
+      
+                              messages.success(request,request.POST['fullname']+' record stored successfully')
+ * info message:
+ 
+		                         messages.info(request,'Now you can add another record')
+> Dont try to prepare message before form_validition **(if form.is_valid():)**.
+> after saving the record only **(form.save())**,then only prepare these messages.
+
+* It looks like(myproject/views.py):
+<img src="viewmass.png" alt="viewmass image"/>
 -----------------------------
 ### Procedure for to show message in Html file:
 ````
@@ -77,3 +92,7 @@ ERROR |	An action was not successful or some other failure occurred
 
 > Using **{% for msg in messages %}** ,If there is morethan one message then show all messages,otherwise there is a single message show that one.
 
+* It looks like(templates/myapp/register.html):
+<img src="regmass.png" alt="regmass image"/>
+
+------------------------------
