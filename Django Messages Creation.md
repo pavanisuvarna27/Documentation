@@ -10,7 +10,7 @@
       * Nothing happens.
       * So, did it save the data or not?
       * User reaction after a couple of (mili)seconds: *Click!* *Click!* *Click!* *Click!*,
-* So this type problems can be rectified using that Messages.
+* So this type problems can be rectified using thisrrrr Messages.
 --------------------------      
 ### Types of Messages:
 
