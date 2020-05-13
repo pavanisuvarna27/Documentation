@@ -127,6 +127,7 @@ INSTALLED_APPS = [
   ### Configuring the Dynamic URL: 
   **In Urls.py:**
   * for that path we will give different values like:
+  
       **for string:**
   
             path('urlname/<str:name',views.funtionname,name='nameoftheurl'),
@@ -135,9 +136,8 @@ INSTALLED_APPS = [
           
              **path('urlname/<str:name',views.funtionname,name='nameoftheurl'),
              
-       * example: 
-          
-                  
+  * example: 
+                           
                    path('hello/<str:name>',views.hello,name='hello'),--------->string
                    path('rollno/<int:id>',views.rollno,name='rollno'),--------->integer
                    
