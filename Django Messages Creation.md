@@ -70,10 +70,10 @@ ERROR |	An action was not successful or some other failure occurred
  * and also show info message like **Now you can add another record**
  * Success message:
       
-                              messages.success(request,request.POST['fullname']+' Success!,record stored successfully')
+                messages.success(request,request.POST['fullname']+' Success!,record stored successfully')
  * info message:
  
-		                         messages.info(request,Info!,Now you can add another record')
+		              messages.info(request,Info!,Now you can add another record')
 > Dont try to prepare message before form_validition **(if form.is_valid():)**.
 
 > after saving the record only **(form.save())**,then only prepare these messages.
