@@ -70,10 +70,10 @@ ERROR |	An action was not successful or some other failure occurred
  * and also show info message like **Now you can add another record**
  * Success message:
       
-                              messages.success(request,request.POST['fullname']+' record stored successfully')
+                              messages.success(request,request.POST['fullname']+' Success!,record stored successfully')
  * info message:
  
-		                         messages.info(request,'Now you can add another record')
+		                         messages.info(request,Info!,Now you can add another record')
 > Dont try to prepare message before form_validition **(if form.is_valid():)**.
 
 > after saving the record only **(form.save())**,then only prepare these messages.
@@ -118,4 +118,34 @@ ERROR |	An action was not successful or some other failure occurred
  <img src="afterregisterop.png" alt="afterregisterop image"/>
    
   ---------------------------------
+  * In above example,we are using **Success message** and **info message**,now try to use other message tags also.
+  
+  ### preparing other messages tags also!
+  * Warning message:
+      
+                              messages.warning(request,'Warning!,Your account expires in three days.')
+ * Error message:
+ 
+		              messages.error(request,'Error!,We could not process your request at this time.')
+ 
+ * Debug message:
+ 
+		              messages.debug(request,'Debug!,%s SQL statements were executed.' % request.POST['empid'])
+ * It looks like(myapp/views.py):
+<img src="otherviews.png" alt="otherviews image"/>
+
+------------------------------
+**Run Project:**
    
+   * save the changes  and start server using **python manage.py runserver**
+   *  Then open chrome:
+   
+    		localhost:8000/url
+   *  Then open chrome:
+   
+    		localhost:8000/register
+		
+ **OutPut :**
+ * Then we get OUTPUT it looks like:
+ <img src="afterother.png" alt="afterother image"/>
+ 
