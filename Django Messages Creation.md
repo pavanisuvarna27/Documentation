@@ -32,23 +32,23 @@ ERROR |	An action was not successful or some other failure occurred
 
 ----------------------------------
 ### How to create messages:
-   * 1. messages.success:
+   * messages.success:
         * example:
         
                  messages.success(request,'ur record added successfully')
-   * 2. messages.info:
+   * messages.info:
         * example:
         
                  messages.success(request,'you can add one more record now')
-   * 3. messages.warning:
+   * messages.warning:
         * example:
         
                  messages.success(request,'Your account expires in three days.')
-   * 4. messages.error:
+   * messages.error:
         * example:
         
                  messages.success(request,'Document Deleted')
-   * 5. messages.debug:
+   * messages.debug:
         * example:
         
                  messages.success(request, '%s SQL statements were executed.' % count)
@@ -98,3 +98,22 @@ ERROR |	An action was not successful or some other failure occurred
 <img src="regmass.png" alt="regmass image"/>
 
 ------------------------------
+**Run Project:**
+   
+   * save the changes  and start server using **python manage.py runserver**
+   *  Then open chrome:
+   
+    			localhost:8000/url
+   * example:
+      
+             		localhost:8000/register
+             
+   **OutPut (Before Registration):**
+   * Then we get OUTPUT it looks like:
+   <img src="registerop.png" alt="registerop image"/>
+   
+   **Output (After Registration):**
+   <img src="afterregisterop.png" alt="afterregisterop image"/>
+   
+  ---------------------------------
+   
