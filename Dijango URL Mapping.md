@@ -184,7 +184,7 @@ INSTALLED_APPS = [
 ---------------------------------------
 **`for Integer:`**
 
-  **`In Urls.py:`adding Dynamic integer rollno url path**
+  **`In Urls.py:adding Dynamic integer rollno url path`**
   * for that path we will give different values like:
   
          path('urlname/<int:id>',views.funtionname,name='nameoftheurl'),
@@ -196,7 +196,7 @@ INSTALLED_APPS = [
 
    <img src="hellorollno.png" alt="hellorollno image"/>
    
-   **`In views.py: importing HttpResponse and adding hello function`**
+   **`In views.py: importing HttpResponse and adding rollno function`**
    * In views.py, we have to import HttpResponse, for that add this line in views.py
    
            
