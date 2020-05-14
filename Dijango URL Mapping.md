@@ -132,56 +132,49 @@ INSTALLED_APPS = [
  ------------------------------------------
 
   ### Configuring the Dynamic URL: 
-  **`In Urls.py: adding string dynamic hello url path and integer dynamic rollno url path`**
-  * for that path we will give different values like:
-  
-      **`for string:`**
-  
-            path('urlname/<str:name>',views.funtionname,name='nameoftheurl'),
-            
-      **`for integer:`**
-          
-             path('urlname/<int:id>',views.funtionname,name='nameoftheurl'),
-             
-  * example: 
-                           
+   **`for string:`**
+         **`In Urls.py: adding string dynamic hello url path and integer dynamic rollno url path`**
+          * for that path we will give different values like:
+          ````
+                     path('urlname/<str:name>',views.funtionname,name='nameoftheurl'),
+           ````
+          * example: 
+          ````
                    path('hello/<str:name>',views.hello,name='hello'),--------->string
-                   path('rollno/<int:id>',views.rollno,name='rollno'),--------->integer
-                   
-  * It looks like(myproject/urls.py):
-   <img src="hellorollno.png" alt="hellorollno image"/>
-   
-  **`In Views.py:importing HttpResponse and add hello function for string and rollno function for integer `**
-  * In views.py, we have to import HttpResponse for that add this line in views.py
-  
+           ````
+          * It looks like(myproject/urls.py):
+               <img src="hello.png" alt="hello image"/>
+    **`In Views.py:importing HttpResponse and add hello function for string and rollno function for integer `**
+          * In views.py, we have to import HttpResponse for that add this line in views.py
+            ````
             from django.http import HttpResponse
-  * In views.py we have add a function, with name we used in urls.py that is **hello** 
-  
-      **`for string:`**
-
+            ````
+          * In views.py we have add a function, with name we used in urls.py that is **hello** 
+             ````
              def hello(request,name):
                  return HttpResponse(<center><h2>Hi '+name+'<br>Welcome to Dynamic String Url</h2></center>)
-                 
- >  NOTE: Remember that in url what u taken as string name, that only passed in this function as a second parameter,it's better to maintain samename in urls and views(inside function) also. 
-    
- > NOTE: In this function, request is a default parameter,we can't change that.
-   
- * It looks like(myapp/views.py):
-   <img src="defstrhello.png" alt="defstrhello image"/>
-   
-   **Run Project:**
-   
-   * Save the changes  and start server using **python manage.py runserver**
-   * Then open chrome **localhost:8000/url/name**
-   * example:
-   
+              ````   
+        >  NOTE: Remember that in url what u taken as string name, that only passed in this function as a second parameter,it's better                to maintain samename in urls and views(inside function) also.     
+        >  NOTE: In this function, request is a default parameter,we can't change that.  
+        * It looks like(myapp/views.py):
+         <img src="defstrhello.png" alt="defstrhello image"/>
+        **Run Project:** 
+        * Save the changes  and start server using **python manage.py runserver**
+        * Then open chrome **localhost:8000/url/name**
+        * example:
+          ````
             localhost:8000/hello/Apssdc
-   **OutPut for Dynamic String Url:**         
-   * Then we get OUTPUT it looks like:
-   <img src="helloop.png" alt="helloop image"/>
+            ````
+        **OutPut for Dynamic String Url:**         
+        * Then we get OUTPUT it looks like:
+        <img src="helloop.png" alt="helloop image"/>
     
- ____
- 
+ -------------------------------------
+   **`for integer:`**
+          
+             path('urlname/<int:id>',views.funtionname,name='nameoftheurl'),
+  
+  path('rollno/<int:id>',views.rollno,name='rollno'),--------->integer
  **`for Integer:`**
 
              def rollno(request,id):
