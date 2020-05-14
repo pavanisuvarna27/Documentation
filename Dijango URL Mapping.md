@@ -132,18 +132,19 @@ INSTALLED_APPS = [
  ------------------------------------------
 
   ### Configuring the Dynamic URL: 
+  
    **`for string:`**
-         **`In Urls.py: adding string dynamic hello url path and integer dynamic rollno url path`**
-          * for that path we will give different values like:
-          ````
-                     path('urlname/<str:name>',views.funtionname,name='nameoftheurl'),
-           ````
-          * example: 
-          ````
-                   path('hello/<str:name>',views.hello,name='hello'),--------->string
-           ````
-          * It looks like(myproject/urls.py):
-               <img src="hello.png" alt="hello image"/>
+
+   **`In Urls.py: adding string dynamic hello url path`**
+    * for that path we will give different values like:
+   
+              path('urlname/<str:name>',views.funtionname,name='nameoftheurl'),
+   * example: 
+   
+           path('hello/<str:name>',views.hello,name='hello'),--------->string
+    
+   * It looks like(myproject/urls.py):
+      <img src="hello.png" alt="hello image"/>
     **`In Views.py:importing HttpResponse and add hello function for string and rollno function for integer `**
           * In views.py, we have to import HttpResponse for that add this line in views.py
             ````
