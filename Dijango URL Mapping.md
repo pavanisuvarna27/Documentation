@@ -130,6 +130,71 @@ INSTALLED_APPS = [
    <img src="msgop.png" alt="msgop image"/>
 
  ------------------------------------------
+### Configuring the Dynamic URL:
+
+**`for string:`**
+  **`In Urls.py:`adding Dynamic string hello url path**
+  * for that path we will give different values like:
+  
+         path('urlname/',views.funtionname,name='nameoftheurl'),
+  * example:
+  ````
+            path('hello/',views.hello,name='hello'),
+   ````
+  * It looks like(myproject/urls.py):
+
+   <img src="hello.png" alt="hello image"/>
+   
+   **`In views.py: importing HttpResponse and adding hello function`**
+   * In views.py, we have to import HttpResponse, for that add this line in views.py
+   
+           
+            from django.http import HttpResponse
+            
+   * In views.py we have add a function, with name we used in urls.py that is **hello**
+   
+   ```
+               def hello(request,name):
+                   return HttpResponse(<center><h2>Hi '+name+'<br>Welcome to Dynamic String Url</h2></center>)
+   ```
+   
+   > NOTE: In this function, request is a default parameter,we can't change that.
+   
+   >  NOTE: Remember that in url what u taken as string name, that only passed in this function as a second parameter,it's better                to maintain samename in urls and views(inside function) also.     
+        
+   
+   * It looks like(myapp/views.py):
+   <img src="defstrhello.png" alt="defstrhello.png"/>
+   
+   **Run Project:**
+   
+   * save the changes  and start server using **python manage.py runserver**
+   *  Then open chrome:
+   
+    localhost:8000/url
+   * example:
+      
+             localhost:8000/msg
+             
+   **OutPut for Dynamic String Url:**
+   * Then we get OUTPUT it looks like:
+   <img src="helloop.png" alt="helloop.png"/>
+
+---------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   ### Configuring the Dynamic URL: 
   
@@ -148,6 +213,7 @@ INSTALLED_APPS = [
                <img src="hello.png" alt="hello image"/>
       
    **`In Views.py: importing HttpResponse and add hello function for string `**
+   
           * In views.py, we have to import HttpResponse for that add this line in views.py
             ````
             from django.http import HttpResponse
