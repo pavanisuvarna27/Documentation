@@ -107,7 +107,7 @@ INSTALLED_APPS = [
    
    ```
                def msg(request):
-                   return HttpResponse('Welcome to all <br> This is ur Static Url')
+                   return HttpResponse('<h2>Welcome to all <br> This is ur Static Url</h2>')
    ```
    
    > NOTE: In this function, request is a default parameter,we can't change that.
@@ -134,7 +134,7 @@ INSTALLED_APPS = [
 
 **`for string:`**
 
-  **`In Urls.py:`adding Dynamic string hello url path**
+  **`In Urls.py:adding Dynamic string hello url path`**
   * for that path we will give different values like:
   
          path('urlname/<str:name>',views.funtionname,name='nameoftheurl'),
