@@ -132,7 +132,7 @@ INSTALLED_APPS = [
  ------------------------------------------
 ### Configuring the Dynamic URL:
 
-**`for string:`**
+#### `for string:`
 
   **`In Urls.py:adding Dynamic string hello url path`**
   * for that path we will give different values like:
@@ -182,7 +182,7 @@ INSTALLED_APPS = [
    <img src="helloop.png" alt="helloop.png"/>
 
 ---------------------------------------
-**`for Integer:`**
+#### `for Integer:`
 
   **`In Urls.py:adding Dynamic integer rollno url path`**
   * for that path we will give different values like:
@@ -231,7 +231,7 @@ INSTALLED_APPS = [
    <img src="rollnoop.png" alt="rollnoop.png"/>
 
 ---------------------------------------
-  **`for multiple values:`**
+  #### `for multiple values:`
 
   **`In Urls.py:Adding Dynamic multiple values like name, id,mobile url path`**
   * for that path we will give different values like:
