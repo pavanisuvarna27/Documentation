@@ -231,9 +231,55 @@ INSTALLED_APPS = [
    <img src="rollnoop.png" alt="rollnoop.png"/>
 
 ---------------------------------------
+  **`for multiple values:`**
 
+  **`In Urls.py:Adding Dynamic multiple values like name, id,mobile url path`**
+  * for that path we will give different values like:
+  
+         path('urlname/<str:name>/<int:id>/<int:mobile>',views.funtionname,name='nameoftheurl'),
+  * example:
+  ````
+            path('studata/<str:name>/<int:id>/<int:mobile>',views.studata,name='studata'),
+   ````
+  * It looks like(myproject/urls.py):
 
+   <img src="multipleurls.png" alt="hellorollno image"/>
+   
+   **`In views.py: importing HttpResponse and adding studata function`**
+   * In views.py, we have to import HttpResponse, for that add this line in views.py
+   
+           
+            from django.http import HttpResponse
+            
+   * In views.py we have add a function, with name we used in urls.py that is **studata**
+   
+   ```
+               def studata(request,name,id,mobile):
+                   return HttpResponse(<h2>Hello {} <br>Your rollno:{}<br>Your Mobileno:{}</h2>'.format(name,id,mobile))
+   ```
+   
+   > NOTE:  Remember that in url what u taken as string name, that only passed in this function as a second parameter,it's better to            maintain samename in urls and views(inside function) also. 
+    
+   > NOTE: In this function, request is a default parameter,we can't change that.
+   
+   * It looks like(myapp/views.py):
+     <img src="multipleviews.png" alt="multipleviews image"/>
+   
+   **Run Project:**
+   
+   * save the changes  and start server using **python manage.py runserver**
+   *  Then open chrome:
+   
+    localhost:8000/url/name/id/mobile
+   * example:
+      
+             localhost:8000/apssdc/528/8887665767
+             
+   **OutPut for Dynamic integer Url:**
+   * Then we get OUTPUT it looks like:
+   <img src="multipleop.png" alt="multipleop.png"/>
 
+-------------------------------------------
 
 
 
