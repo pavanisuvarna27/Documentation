@@ -40,19 +40,19 @@ ERROR |	An action was not successful or some other failure occurred
    * messages.info:
         * example:
         
-                 messages.success(request,'you can add one more record now')
+                 messages.info(request,'you can add one more record now')
    * messages.warning:
         * example:
         
-                 messages.success(request,'Your account expires in three days.')
+                 messages.warning(request,'Your account expires in three days.')
    * messages.error:
         * example:
         
-                 messages.success(request,'Document Deleted')
+                 messages.error(request,'Document Deleted')
    * messages.debug:
         * example:
         
-                 messages.success(request, '%s SQL statements were executed.' % count)
+                 messages.debug(request, '%s SQL statements were executed.' % count)
                  
  ---------------------------
  ### Creating a Django Project & Application!
