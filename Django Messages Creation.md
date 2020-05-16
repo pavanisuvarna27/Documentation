@@ -120,7 +120,7 @@ INSTALLED_APPS = [
 ````
 
 * It looks like(myproject/urls.py):
-   <img src="urls.png" alt="urls image"/>
+   <img src="images/urls.png" alt="urls image"/>
    
   -------------------------
 **`In Views.py: Creating register function and render with register.html page`**
@@ -135,7 +135,7 @@ INSTALLED_APPS = [
 ````
 
 * It looks like(myapp/views.py):
-   <img src="registerfun.png" alt="registerfun image"/>
+   <img src="images/registerfun.png" alt="registerfun image"/>
    
 ----------------------------
 **`In register.html: Loading static files and form creation with fields in html page`**
@@ -178,7 +178,7 @@ INSTALLED_APPS = [
 ````
 
 * It looks like(templates/myapp/register.html):
-   <img src="register123.png" alt="register123 image"/>
+   <img src="images/register123.png" alt="register123 image"/>
 
 ---------------------------------------
 **Run Project:**
@@ -193,7 +193,7 @@ INSTALLED_APPS = [
 		
  **OutPut :**
  * Then we get OUTPUT it looks like:
- <img src="registerop1.png" alt="registerop1 image"/>
+ <img src="images/registerop1.png" alt="registerop1 image"/>
  
  ---------------------------------------
  **After Creating Employee Registration Form ,For this RegistrationForm I want apply message alerts Using Message Tags**
@@ -204,7 +204,7 @@ INSTALLED_APPS = [
       from django.contrib import messages
 * Based on Message, You have to choose which message type you have to use.
 * It looks like(myapp/views.py):
-<img src="msgcontrib.png" alt="msgcontrib image"/>
+<img src="images/msgcontrib.png" alt="msgcontrib image"/>
 
 ----------------
 ### Preparing Message (myapp/views.py):
@@ -221,7 +221,7 @@ INSTALLED_APPS = [
 > NOTE:  After saving the record only **(form.save())**,then only prepare these messages.
 
 * It looks like(myapp/views.py):
-<img src="viewsmass1.png" alt="viewsmass1 image"/>
+<img src="images/viewsmass1.png" alt="viewsmass1 image"/>
 
 -----------------------------
 ### Procedure for to show message in Html file:
@@ -238,7 +238,7 @@ INSTALLED_APPS = [
 > NOTE:  Using **{% for msg in messages %}** ,If there is morethan one message then show all messages,otherwise there is a single message show that one.
 
 * It looks like(templates/myapp/register.html):
-<img src="regmass.png" alt="regmass image"/>
+<img src="images/regmass.png" alt="regmass image"/>
 
 ------------------------------
 **Run Project:**
@@ -253,11 +253,11 @@ INSTALLED_APPS = [
 		
  **OutPut (Before Registration):**
  * Then we get OUTPUT(Before Registration) it looks like:
- <img src="registerop.png" alt="registerop image"/>
+ <img src="images/registerop.png" alt="registerop image"/>
    
  **Output (After Registration):**
  * Then we get OUTPUT(After Registration) it looks like:
- <img src="afterregisterop.png" alt="afterregisterop image"/>
+ <img src="images/afterregisterop.png" alt="afterregisterop image"/>
    
   ---------------------------------
   * In above example,we are using **Success message** and **info message**,now try to use other message tags also.
@@ -274,7 +274,7 @@ INSTALLED_APPS = [
  
 		              messages.debug(request,'Debug!,%s SQL statements were executed.' % request.POST['empid'])
  * It looks like(myapp/views.py):
-<img src="otherviews.png" alt="otherviews image"/>
+<img src="images/otherviews.png" alt="otherviews image"/>
 
 ------------------------------
 **Run Project:**
@@ -289,7 +289,7 @@ INSTALLED_APPS = [
 		
  **OutPut :**
  * Then we get OUTPUT it looks like:
- <img src="afterother.png" alt="afterother image"/>
+ <img src="images/afterother.png" alt="afterother image"/>
  
 > NOTE: Debug messages ignored by default.
 
@@ -309,7 +309,7 @@ INSTALLED_APPS = [
     			messages.ERROR: 'danger',
 	       		       }
 * It looks like(myproject/settings.py):
-<img src="seterror.png" alt="seterror image"/>
+<img src="images/seterror.png" alt="seterror image"/>
 
 ------------------------------
 **Run Project:**
@@ -324,6 +324,6 @@ INSTALLED_APPS = [
 		
  **OutPut :**
  * Then we get OUTPUT it looks like:
- <img src="errorop.png" alt="errorop image"/>
+ <img src="images/errorop.png" alt="errorop image"/>
  
 > NOTE: Debug messages ignored by default.
