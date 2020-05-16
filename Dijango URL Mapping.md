@@ -243,7 +243,7 @@ INSTALLED_APPS = [
    ````
   * It looks like(myproject/urls.py):
 
-   <img src="multipleurls.png" alt="hellorollno image"/>
+   <img src="multipleurls.png" alt="multipleurls image"/>
    
    **`In views.py: importing HttpResponse and adding studata function`**
    * In views.py, we have to import HttpResponse, for that add this line in views.py
