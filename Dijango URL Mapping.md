@@ -59,7 +59,7 @@ INSTALLED_APPS = [
 
  ### How do URLs work in Django?
   * Let's open up the myproject/urls.py file in your code editor like SublimeTool and see what it looks like:
-  <img src="urlsconf.png" alt="urlconf image"/>
+  <img src="images/urlsconf.png" alt="urlconf image"/>
   
   * As you can see, Django has already put something here for us.
   * We have only one url in myproject/urls.py that is **The admin URL** and that is for admin stuff.
@@ -80,7 +80,7 @@ INSTALLED_APPS = [
   from myapp import views
   ```` 
   * It looks like(myproject/urls.py):
-   <img src="importviews.png" alt="importviews image"/>
+   <img src="images/importviews.png" alt="importviews image"/>
    
    ------------------------------------------
    
@@ -95,7 +95,7 @@ INSTALLED_APPS = [
    ````
   * It looks like(myproject/urls.py):
 
-   <img src="msg.png" alt="msg image"/>
+   <img src="images/msg.png" alt="msg image"/>
    
    **`In views.py: importing HttpResponse and adding msg function`**
    * In views.py, we have to import HttpResponse, for that add this line in views.py
@@ -113,7 +113,7 @@ INSTALLED_APPS = [
    > NOTE: In this function, request is a default parameter,we can't change that.
    
    * It looks like(myapp/views.py):
-   <img src="defmsg.png" alt="defmsg image"/>
+   <img src="images/defmsg.png" alt="defmsg image"/>
    
    **Run Project:**
    
@@ -127,7 +127,7 @@ INSTALLED_APPS = [
              
    **OutPut for Static Url:**
    * Then we get OUTPUT it looks like:
-   <img src="msgop.png" alt="msgop image"/>
+   <img src="images/msgop.png" alt="msgop image"/>
 
  ------------------------------------------
 ### Configuring the Dynamic URL:
@@ -144,7 +144,7 @@ INSTALLED_APPS = [
    ````
   * It looks like(myproject/urls.py):
 
-   <img src="hello.png" alt="hello image"/>
+   <img src="images/hello.png" alt="hello image"/>
    
    **`In views.py: importing HttpResponse and adding hello function`**
    * In views.py, we have to import HttpResponse, for that add this line in views.py
@@ -165,7 +165,7 @@ INSTALLED_APPS = [
         
    
    * It looks like(myapp/views.py):
-   <img src="defstrhello.png" alt="defstrhello.png"/>
+   <img src="images/defstrhello.png" alt="defstrhello.png"/>
    
    **Run Project:**
    
@@ -179,7 +179,7 @@ INSTALLED_APPS = [
              
    **OutPut for Dynamic String Url:**
    * Then we get OUTPUT it looks like:
-   <img src="helloop.png" alt="helloop.png"/>
+   <img src="images/helloop.png" alt="helloop.png"/>
 
 ---------------------------------------
 ### `for Integer:`
@@ -194,7 +194,7 @@ INSTALLED_APPS = [
    ````
   * It looks like(myproject/urls.py):
 
-   <img src="hellorollno.png" alt="hellorollno image"/>
+   <img src="images/hellorollno.png" alt="hellorollno image"/>
    
    **`In views.py: importing HttpResponse and adding rollno function`**
    * In views.py, we have to import HttpResponse, for that add this line in views.py
@@ -214,7 +214,7 @@ INSTALLED_APPS = [
    > NOTE: In this function, request is a default parameter,we can't change that.
    
    * It looks like(myapp/views.py):
-     <img src="defintrollno.png" alt="defintrollno image"/>
+     <img src="images/defintrollno.png" alt="defintrollno image"/>
    
    **Run Project:**
    
@@ -228,7 +228,7 @@ INSTALLED_APPS = [
              
    **OutPut for Dynamic integer Url:**
    * Then we get OUTPUT it looks like:
-   <img src="rollnoop.png" alt="rollnoop.png"/>
+   <img src="images/rollnoop.png" alt="rollnoop.png"/>
 
 ---------------------------------------
   ### `for multiple values:`
@@ -243,7 +243,7 @@ INSTALLED_APPS = [
    ````
   * It looks like(myproject/urls.py):
 
-   <img src="multipleurls.png" alt="multipleurls image"/>
+   <img src="images/multipleurls.png" alt="multipleurls image"/>
    
    **`In views.py: importing HttpResponse and adding studata function`**
    * In views.py, we have to import HttpResponse, for that add this line in views.py
@@ -263,7 +263,7 @@ INSTALLED_APPS = [
    > NOTE: In this function, request is a default parameter,we can't change that.
    
    * It looks like(myapp/views.py):
-     <img src="multipleviews.png" alt="multipleviews image"/>
+     <img src="images/multipleviews.png" alt="multipleviews image"/>
    
    **Run Project:**
    
@@ -277,7 +277,7 @@ INSTALLED_APPS = [
              
    **OutPut for Dynamic integer Url:**
    * Then we get OUTPUT it looks like:
-   <img src="multipleop.png" alt="multipleop.png"/>
+   <img src="images/multipleop.png" alt="multipleop.png"/>
 
 -------------------------------------------
 
