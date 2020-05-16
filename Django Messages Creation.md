@@ -228,7 +228,7 @@ INSTALLED_APPS = [
 ````
 {% if messages %}
      {% for msg in messages %}
-          <h2>{{msg}}</h2>
+          <div class="alert alert-{{ msg.tags}}">{{ msg }}</div>
      {% endfor %}
 {% endif %}
 ````
