@@ -281,7 +281,98 @@ INSTALLED_APPS = [
 
 -------------------------------------------
 
+ ### Configuring Another app Urls:
+ #### Create an Application
+* We assume you are in your project folder. In our main “myproject” folder, the same folder then manage.py −
 
+````
+$ python manage.py startapp myapp2
+````
+**`In settings.py:`**
+#### Get the Project to Know About Your Application
+* At this stage we have our "myapp2" application, now we need to register it with our Django project "myproject". To do so, update INSTALLED_APPS tuple in the settings.py file of your project (add your app name) −
+
+````
+# Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myapp',
+    'myapp2',
+]
+````
+------------------------------------------
+  **`In myproject/urls.py:`**
+  * For adding urls in different app first we have to add **include** in mainurls.py and include myapp2 urls in mainurls.py:**
+  * for that path we will give different values like:
+    
+         from django.urls import path,include
+        
+         path('myapp2/',include('myapp2.urls')),
+  
+  * It looks like(myproject/urls.py):
+
+   <img src="images/anotherappmainurl.png" alt="anotherappmainurl image"/>
+   
+   **After including myapp2 urls in myproject/urls.py then in myapp2 we have to create one file,with the name urls.py.**
+   * It looks like(myapp2/urls.py):
+
+   <img src="images/anotherapp.png" alt="anotherapp image"/>
+   
+   **`In myapp2/urls.py:`**
+  * In myapp2/urls.py ,we have to import views from myapp, for that add this line in myapp2/urls.py.
+                                
+                                from django.urls import path
+                                from myapp2 import views
+
+  * In myapp2/urls.py for creating url we will use path function:
+
+          urlpatterns=[
+                path(‘data/<str:name>/<int:id>’,views.data,name=’data’),
+            ]
+  
+  * It looks like(myproject/urls.py):
+
+   <img src="images/anotherappurl.png" alt="anotherappurl image"/>
+   
+   **`In views.py: importing HttpResponse and adding msg function`**
+   * In views.py, we have to import HttpResponse, for that add this line in views.py
+   
+           
+            from django.http import HttpResponse
+            
+   * In views.py we have add a function, with name we used in urls.py that is **data**
+   
+   ```
+               def data(request,name,id):
+                   return HttpResponse('<h2>Hello {}<br>ur rollno: {}</h2>'.format(name,id))
+   ```
+   
+   > NOTE: In this function, request is a default parameter,we can't change that.
+   
+   * It looks like(myapp/views.py):
+   <img src="images/anotherappviews.png" alt="anotherappviews image"/>
+   
+   **Run Project:**
+   
+   * save the changes  and start server using **python manage.py runserver**
+   *  Then open chrome:
+   
+    localhost:8000/myapp2/data/name/id
+   * example:
+      
+             localhost:8000/myapp2/data/stateskilldevelopment/401
+             
+   **OutPut:**
+   * Then we get OUTPUT it looks like:
+   <img src="images/anotherappop.png.png" alt="anotherappop image"/>
+
+ ------------------------------------------
 
 
 
