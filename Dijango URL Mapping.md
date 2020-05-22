@@ -308,7 +308,7 @@ INSTALLED_APPS = [
 ````
 ------------------------------------------
   **`In myproject/urls.py:`**
-  * For adding urls in different app first we have to add **include** in mainurls.py and include myapp2 urls in mainurls.py:**
+  * For adding urls in different app first we have to add **include** in mainurls.py and include myapp2 urls in mainurls.py:
   * for that path we will give different values like:
     
          from django.urls import path,include
@@ -370,7 +370,7 @@ INSTALLED_APPS = [
              
    **OutPut:**
    * Then we get OUTPUT it looks like:
-   <img src="images/anotherappop.png.png" alt="anotherappop image"/>
+   <img src="images/anotherappop.png" alt="anotherappop image"/>
 
  ------------------------------------------
 
