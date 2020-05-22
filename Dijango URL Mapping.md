@@ -281,7 +281,7 @@ INSTALLED_APPS = [
 
 -------------------------------------------
 
- ### Configuring Another app Urls:
+ ### `Configuring Another app Urls :`
  #### Create an Application
 * We assume you are in your project folder. In our main “myproject” folder, the same folder then manage.py −
 
